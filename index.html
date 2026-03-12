@@ -447,6 +447,15 @@
         </div>
       </div>
 
+      <!-- QR Mates con Andrés -->
+      <div style="background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.18); border-radius:10px; padding:10px 14px; display:flex; align-items:center; gap:12px">
+        <div id="qr-mca-cover-prob" style="flex-shrink:0; background:white; border-radius:6px; padding:3px; width:62px; height:62px; display:flex; align-items:center; justify-content:center;"></div>
+        <div>
+          <div style="font-size:.75rem; font-weight:700; color:white; margin-bottom:3px">📹 Vídeos — Mates con Andrés</div>
+          <div style="font-size:.7rem; color:rgba(255,255,255,.8); line-height:1.5; margin-bottom:4px">Canal de YouTube con todos los vídeos explicativos</div>
+          <a href="https://www.youtube.com/@MatesconAndr%C3%A9s" target="_blank" style="font-size:.67rem; color:#99f6e4; text-decoration:underline; font-family:monospace">youtube.com/@MatesconAndrés</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -1574,6 +1583,8 @@
 document.addEventListener('DOMContentLoaded', function() {
   var items = [
     // Portada
+    { id: 'qr-mca-cover-prob', url: 'https://www.youtube.com/@MatesconAndr%C3%A9s' },
+    { id: 'qr-mca-body-prob',  url: 'https://www.youtube.com/@MatesconAndr%C3%A9s' },
     { id: 'qr-app-cover',      url: 'https://m4r14bravo.github.io/app_probabilidad_estadistica_2bachillerato/' },
     { id: 'qr-pau-cover',      url: 'https://drive.google.com/file/d/1AyJS--xYtQFJYzUmVOQLY4PcR892-y6w/view' },
     // Recursos finales
@@ -1615,7 +1626,7 @@ document.addEventListener('DOMContentLoaded', function() {
     { id: 'qr-d-eso-sol',      url: 'https://drive.google.com/file/d/1QKcbTAOl7NLYADUsKRSe9Xhir1l8XCUz/view' }
   ];
 
-  var bigIds = ['qr-app-cover','qr-pau-cover','qr-app-body','qr-pau-body'];
+  var bigIds = ['qr-app-cover','qr-pau-cover','qr-app-body','qr-pau-body','qr-mca-cover-prob','qr-mca-body-prob'];
 
   items.forEach(function(v) {
     var el = document.getElementById(v.id);
@@ -1636,4 +1647,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </body>
 </html>
-
